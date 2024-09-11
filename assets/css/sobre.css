@@ -1,72 +1,82 @@
-*{
-    margin: 0% auto;
+body {
+    color: rgb(0, 0, 0);
     background-color: #ffffb3;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    width: 100%;
-    background: #734C29;
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
 }
-header h1{
-    font-family: "Baskervville SC", serif;
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #734C29;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    color: #734C29;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #734C29;
-    color: rgb(255, 255, 255);  
-    height: 60px; 
-    width: 50px;
-    font-size: 50px;
-}
-#tudo{
-    padding: 30px;
-    justify-content: space-between;
-}
-.quemsomos {
-    height: 50%;
-    width: 40%;
 }
 
-.fazer{
-    height: 50%;
-    width: 40%;
+footer a {
+    margin: 20px;
+    text-align: center;
 }
 
-.fundadores{
-    height: 50%;
-    width: 40%;
+footer p {
+    margin-top: 2px;
 }
 
-h1{
-    font-size: 40px;
+.container {
+    padding: 0px 50px;
 }
 
-p{
+nav a {
     font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+nav a:hover {
+    color: #734C29;;
 }
-.titulo{
-    color: #000000;
-    text-decoration: none;
-    font-size: 25px;
-    position: relative;
-    display: inline-block;
-    justify-content: space-evenly;
-    padding-right: 10px;
-    
 
+.contact-form input{
+    width: 100%;
+    padding: 8px 0;
+    margin: 8px 0;
 }
-.titulo::after{
-    content: " ";
-    width: 0px;
-    height: 4px;
-    background-image: linear-gradient(15deg, #faf284, #ffef0c );
-    position: absolute;
-    top: 32px;
-    left: 0;
-    transition: 0.5s;
+
+.contact-form input[type=text] {
+    height: 100px;
 }
-.titulo:hover::after{
-    width: 50px;
+
+button {
+    color: black;
+    background-color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
 }
