@@ -5,8 +5,9 @@
     box-sizing: border-box;
     font-family: "Baskervville SC", serif;
 }
+
 html{
-    background-color: rgb(187,148,87)
+    background-color: #faf284;
 }
 .container{
     max-width: 1080px;
@@ -24,26 +25,32 @@ header{
     font-size: 50px;
     height: 100px;
     padding: 15px;
+    display: flex;
 }
 .logo{
     width: 25%;
     color: #ffffff;
     margin-right: 16px;
+    filter: drop-shadow(1px 1px 20px rgb(252, 252, 69)) ;
 }
+
 .menu{
     width: 50%;
+    padding: 20px;
 }
+
+
 .menu nav a{
     color: #ffffff;
     text-decoration: none;
-    padding-right: 50px;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
-    margin: 20px;
-    justify-content: space-between;
     display: inline-block;
+    justify-content: space-evenly;
+    padding-right: 10px;
+
     
-    
+
 }
 .menu nav a::after{
     content: " ";
@@ -58,12 +65,13 @@ header{
 .menu nav a:hover::after{
     width: 50px;
 }
+
 .pesquisa{
     background-color:#734C29;
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    align-items: line;
     justify-content: center;
-   
+    justify-items: center;
 
 
 }
@@ -117,15 +125,20 @@ h1{
     font-size: 30px;
 }
 
-.logo{
-    filter: drop-shadow(1px 1px 20px rgb(252, 252, 69)) ;
-}
-
 button{
     height: 40px;
     width: 90px;
-    
+    border-radius: 20%;
 }
 nav{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(5, 5, 5);
+    height: 50px;
+    filter: drop-shadow(5px 5px 80px rgb(252, 252, 69)) ;
 }
